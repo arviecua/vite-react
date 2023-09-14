@@ -1,5 +1,6 @@
 import Alert from "./components/Alert";
 import ListGroup from "./components/ListGroup";
+import Button from "./components/Button";
 
 function App() {
   let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
@@ -22,7 +23,13 @@ function App() {
         onSelectItem={handleSelectItem}
       /> */}
 
-      <Alert />
+      <Alert>
+        Hello <span>World</span>
+      </Alert>
+
+      <Button color="dark" onClick={() => console.log("clicked")}>
+        My Button
+      </Button>
     </div>
   );
 }
